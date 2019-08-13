@@ -26,11 +26,12 @@ class ProdConfig(Config):
     DEBUG =True 
 
 class TestConfig(Config):
-    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://mannuh:123@localhost/blog_test'
+    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:123@localhost/blog_test'
     DEBUG =True 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://blog:123@localhost/blog'
+  
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:123@localhost/blog'
     DEBUG = True
 
 config_options = {
