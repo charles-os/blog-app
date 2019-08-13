@@ -1,7 +1,6 @@
 import os
 
 class Config:
-    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://mannuh:123@localhost/blog'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SECRET_KEY = 'chalo'
@@ -23,6 +22,8 @@ class Config:
 
 class ProdConfig(Config):
     # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    
     DEBUG =True 
 
 class TestConfig(Config):
@@ -31,7 +32,7 @@ class TestConfig(Config):
 
 class DevConfig(Config):
   
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:123@localhost/piopy'
+    # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:123@localhost/piopy'
     DEBUG = True
 
 config_options = {
