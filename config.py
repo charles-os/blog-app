@@ -4,7 +4,7 @@ class Config:
     # SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://mannuh:123@localhost/blog'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
-    SECRET_KEY = 'mannuh'
+    SECRET_KEY = 'chalo'
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -30,7 +30,7 @@ class TestConfig(Config):
     DEBUG =True 
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://mannuh:123@localhost/blog'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://blog:123@localhost/blog'
     DEBUG = True
 
 config_options = {
