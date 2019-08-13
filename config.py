@@ -31,7 +31,7 @@ class TestConfig(Config):
 
 class DevConfig(Config):
   
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:123@localhost/blog'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:123@localhost/piopy'
     DEBUG = True
 
 config_options = {
